@@ -1,5 +1,5 @@
-import time
 import sys
+import time
 from array import array
 from contextlib import contextmanager
 
@@ -41,8 +41,11 @@ if __name__ == '__main__':
     except IndexError:
         filename = 'gaze_data.bin'
 
-    tracker = tr.find_all_eyetrackers()[0]
-
+    try:
+        tracker = tr.find_all_eyetrackers()[0]
+    except IndexError:
+        print('No Eye Tracker was found, quitting..')
+        sys.exit(1)
     with get_callback_for_file(filename) as callback:
         try:
             tracker.subscribe_to(
