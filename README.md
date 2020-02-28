@@ -7,7 +7,11 @@ The following project resulted of the "Neurodesign Seminar – How to Measure an
 
 The link to the course website can be found [here](https://hpi.de/studium/lehrveranstaltungen/it-systems-engineering-ma/lehrveranstaltung/wise-19-20-2918-neurodesign-seminar--how-to-measure-and-analyse-physiological-and-psychological-data.html).
 
+## Installation:
 
+```
+pip install git+https://github.com/christianwarmuth/neurogaze.git
+```
 
 ## Contributors:  
 
@@ -23,5 +27,3 @@ We found that we tend to blink more as the day progresses by analyzing multiple 
 When analyzing the working behavior which manifests in the eyetracking data, we found that there are clear interaction patterns between the different applications we use. For example, the use of a messenger service is clearly different from the use and interaction with pdf-readers, browsers or development environments for coding. In the course of the analysis, we could clearly distinguish between different activities (reading, coding, and scrolling etc.), whereas in a longer analysis we might have the opportunity to on the one hand distinguish between more activities and on the other hand analyze more subtleties within the different activities (including differentiating between different reading types), for which various research results already exist. 
 
 Encouraged by previous research in this field, we have thought about an experimental framework to elaborate and analyze whether blinks, micro-saccades and pupil-diameter qualify for determining the cognitive load of users. This can either be used to develop user interfaces which only imposes little ground cognitive load to the user and which can be used to adapt the cognitive load to the situation of the user.   We came up with a research proposal taking into account blinks, micro-saccades and pupil-diameter in its individual role as well as in the interplay as an indicator for cognitive load via the n-back-task.
-
-
